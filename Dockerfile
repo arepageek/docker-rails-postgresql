@@ -32,7 +32,7 @@ RUN apt-get install -y \
 ENV PATH "/usr/lib/postgresql/9.6/bin:$PATH"
 RUN sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
 RUN wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | apt-key add -
-RUN apt-get install -y postgresql-common
+RUN apt-get update
 RUN apt-get install -y postgresql-9.6 libpq-dev
 
 #Rbenv
