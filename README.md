@@ -2,8 +2,8 @@
 
 ### Contiene:
 
-* Ruby 2.4.0
-* Rails 5.0.1
+* Ruby 2.4.2
+* Rails 5.1.4
 * Postgresql 9.6
 * Git
 * Otros paquetes esenciales

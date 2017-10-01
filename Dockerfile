@@ -47,9 +47,9 @@ RUN echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 ENV PATH "$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 
-#Compilamos la version 2.4 de Ruby
-RUN rbenv install 2.4.0
-RUN rbenv global 2.4.0
+#Compilamos la version 2.4.2 de Ruby
+RUN rbenv install 2.4.2
+RUN rbenv global 2.4.2
 RUN $HOME/.rbenv/shims/gem install bundler
 RUN rbenv rehash
 
@@ -58,7 +58,7 @@ RUN rbenv rehash
 
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt-get install -y nodejs
-RUN $HOME/.rbenv/shims/gem install rails -v 5.0.1
+RUN $HOME/.rbenv/shims/gem install rails -v 5.1.4
 RUN rbenv rehash
 
 
